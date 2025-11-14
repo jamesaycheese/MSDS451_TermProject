@@ -1,0 +1,23 @@
+Aurora Multi-Asset Navigator (AMAN) — Final Export Summary
+
+Universe: SPY, EFA, IEF, VNQ, GLD
+Period: 2000-01-01 to None
+Fees: 2% mgmt annual, 20% performance (HWM), startup $100,000, TC 5.0 bps/100% turnover
+Overlays: LSTM, XGBoost, and Ensemble (bearish if mean < 0)
+
+Key KPIs (Net Growth Curves):
+
+               ann_return  ann_vol  sharpe  max_drawdown  terminal_value
+AMAN_net           0.0438   0.1011  0.4244       -0.2524          2.2712
+AMAN_LSTM_net      0.0406   0.0962  0.4141       -0.2355          2.1466
+AMAN_XGB_net       0.0435   0.0991  0.4298       -0.2524          2.2658
+AMAN_ENS_net       0.0419   0.0991  0.4141       -0.2176          2.1896
+EW_net             0.0583   0.1299  0.4361       -0.3801          2.8480
+60_40_net          0.0450   0.1202  0.3663       -0.3747          2.2226
+
+Files written:
+- master_summary.csv
+- all_value_curves_net.csv
+- all_value_curves_tail_net.csv
+- management_kpis_net.csv
+- run_config.json

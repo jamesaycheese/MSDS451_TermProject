@@ -1,0 +1,42 @@
+{
+  "universe": [
+    "SPY",
+    "EFA",
+    "IEF",
+    "VNQ",
+    "GLD"
+  ],
+  "start": "2000-01-01",
+  "end": null,
+  "rebalance_days": 21,
+  "momentum_lookback_days": 231,
+  "vol_lookback_days": 60,
+  "cap_per_asset": 0.4,
+  "transaction_cost_per_turnover": 0.0005,
+  "fees": {
+    "startup_cost": 100000.0,
+    "aum_start": 1000000.0,
+    "mgmt_fee_annual": 0.02,
+    "mgmt_fee_daily": 7.936507936507937e-05,
+    "performance_fee_rate": 0.2
+  },
+  "models": {
+    "lstm": {
+      "lookback": 20,
+      "epochs": 100,
+      "dropout": 0.3,
+      "units": 64
+    },
+    "xgboost": {
+      "n_estimators": 200,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9
+    }
+  },
+  "overlays": {
+    "cut_equity_fraction": 0.5,
+    "ensemble_logic": "mean_sign_threshold_0"
+  }
+}
