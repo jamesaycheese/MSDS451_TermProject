@@ -1,6 +1,6 @@
 # Aurora Multi-Asset Navigator (AMAN)
 
-Term project for MSDS 451 (Financial Engineering) at Northwestern: a rules-based multi-asset strategy with machine learning risk overlays, backtested as a hypothetical fund with fees.
+Term project for MSDS 451 at Northwestern: a rules-based multi-asset strategy with machine learning risk overlays, backtested as a hypothetical fund with fees.
 
 Explore the results and run the simulator in the browser: https://jamesquantai.com/projects/financial-backtesting.html
 
